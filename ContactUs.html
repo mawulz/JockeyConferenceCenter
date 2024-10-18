@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jockey's Conference Center</title>
+    <link rel="stylesheet" href="ContactUs.css">
+    <script src="Interactive.js"></script>
+    <script src="ContactUs.js" defer></script>
+    <link rel="icon" type="image" sizes="30x30" href="./ImageAsset/JCC Logo3_1.svg">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./ImageAsset/JCC Logo2.svg" alt="" class="logo">
+                <ul class="navlink" id="navtop">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Event.html">Events</a></li>
+                    <li><a href="PriceList.html">Price List</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <img src="./ImageAsset/Vector.svg" alt="" id="menu-hamburger" onclick="menuFunction()">
+                </ul>
+        </nav>
+        <div class="middle_text">
+            <p class="head">Contact Us</p>
+            <p class="subhead1">Have a question to ask or discuss for more info? feel free to ask us
+            </p>
+        </div>
+        <div class="divider"></div>
+    </header>
+
+    <div class="form">
+        <form class="form-box" id="registform">
+            <div class="part">
+                <input type="text" name="username" id="username" placeholder="Name" onkeyup="validate_name()">
+                <div class="error-messages">
+                    <span class="error" id="error-name"></span>
+                </div>
+                <input type="email" name="email" id="email" placeholder="Email" onkeyup="validate_email()">
+                <div class="error-messages">
+                    <span class="error" id="error-email"></span>
+                </div>
+                <input type="number" name="phone" id="phone" placeholder="Phone number" onkeyup="validate_phone()">
+                <div class="error-messages">
+                    <span class="error" id="error-phone"></span>
+                </div>
+            </div>
+            <div class="part">
+                <textarea type="text" name="message" id="message" placeholder="message" class="massage-box"onkeyup="validate_message()"></textarea>
+                <div class="error-messages">
+                    <span class="error" id="message-error"></span>
+                </div>
+            </div>
+        </form>
+        <form class="form-box2" method="get" id="registform" onsubmit="validate_method()">
+            <div class="contact-method">
+                <p>convenient to be contacted with?</p>
+                <div class="method">
+                    <input class="radio-box" type="radio" name="method" id="email2">
+                    <label class="radio-label" for="email2">email</label>
+                    <input class="radio-box" type="radio" name="method" id="phone2">
+                    <label class="radio-label" for="phone2">phone</label>
+                </div>
+                <div class="error-messages-method">
+                    <span class="error" id="error-method"></span>
+                </div>
+            </div>
+            <div class="submitButton">
+                <button type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="left-footer">
+            <img src="./ImageAsset/JCC Logo2.svg" alt="">
+            <p>Jockey's Conference Center - Jl. Boulevard Bintaro Raya</p>
+        </div>
+        <div class="right-footer">
+            <div class="email">
+                <p class="subtitle1">Get in touch</p>
+                <input type="email-news" placeholder="Enter your email address">
+                <p class="notes">*by submitting my email address, I agree to JCC's Privacy Policy</p>
+                <div class="submits">
+                    <button type="submit">submit</button>
+                </div>
+            </div>
+            <div class="social">
+                <p class="subtitle2">Social</p>
+                <div class="socialLogo">
+                    <p><a href="https://twitter.com/home"><img src="./ImageAsset/Twitter logo.svg" alt="Twitter"></a></p>
+                    <p><a href="https://www.instagram.com/"><img src="./ImageAsset/Instagram Logo.svg" alt="Instagram"></a></p>
+                    <p><a href="https://www.facebook.com/"><img src="./ImageAsset/Facebook Logo.svg" alt="Facebook" id="fb"></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

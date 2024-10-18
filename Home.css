@@ -1,0 +1,915 @@
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700&display=swap');
+
+html {
+    /* overflow: hidden; */
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    /* box-sizing: border-box; */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    /* background: #262522;  */
+    background-color: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #575757; 
+    border-radius: 20px;
+    transition: .5s;
+    /* height: 2px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D6AD60; 
+}
+
+header {
+    top: 0;
+}
+
+body {
+    background-color:#262522;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.landing {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(180deg, #1E1E1E -1.32%, rgba(0, 0, 0, 0) 50.23%, #262522 98.64%), url(./ImageAsset/ricardo-gomez-angel-y3QKr4TARLA-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+}
+
+nav {
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 50px;
+    margin-right: 8rem;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav img {
+    width: 100px;
+    height: 150px;
+}
+
+nav ul {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin-right: 7rem;
+    /* position: fixed; */
+    /* left: 2%; */
+} 
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    /* margin-right: 20px; */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+nav ul li .active {
+    color: #D6AD60;
+}
+
+nav ul li a:hover {
+    /* margin: 8px;
+    padding: 8px; */
+    color: #D6AD60;
+    transition: .3s;
+}
+
+
+nav.scrolled {
+    background-color: rgba(39, 38, 35, 0.8);
+    backdrop-filter: blur(12px);
+}
+
+nav #menu-hamburger {
+    display: none;
+    width: 27px;
+    top: 0;
+    right: 14%;
+    position: absolute;
+}
+
+.middle_text {
+    /* margin-top: 40px; */
+    border-top: 30px;
+    padding-top: 14%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.head {
+    transition: .3s ease-in;
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 80px;
+    text-shadow: rgba(0,0,0,0.5) 0px 0 20px;
+}
+
+.subhead1 {
+    transition: .3s ease-in;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 40px;
+    text-shadow: rgba(0,0,0,1) 0px 0 8px;
+}
+
+.subhead2 {
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    /* padding-top: 40px; */
+    text-shadow: rgba(0,0,0,1) 0px 0 8px;
+}
+
+.latest_event {
+    background-color:#262522;
+    height: auto;
+    width: 100%;
+}
+
+.title1 {
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-left: 70px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.carousel {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cards {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+.latestContent {
+    box-shadow: 0px 12px 20px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 449.32px;
+    justify-content: center;
+    background-color: #F4EBD0;
+    width: 80%;
+    border-radius: 33px;
+    overflow: hidden;
+}
+
+.info_event {
+    margin-top: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 3rem;
+    width: 60vh;
+}
+
+.date {
+    color: #C0810D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.desc1 {
+    margin-top: 25px;
+    color: #262522;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+.info {
+    margin-top: 90px;
+    height: 50px;
+    width: 130px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #C0810D;
+    border-color: #C0810D;
+    border-style: solid;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    /* transition-duration: 0.3s; */
+}
+
+.info:hover {
+    background-color: #D6AD60;
+    border-color: #D6AD60;
+    color: #F4EBD0;
+    transition: .4s;
+}
+
+
+.image1{
+    width: 105vh;
+    background-image: linear-gradient(0deg, rgba(182, 141, 64, 1) 2%, rgba(182, 141, 64, 0),rgba(182, 141, 64, 0) 89.91%), url(./ImageAsset/anthony-delanoix-hzgs56Ze49s-unsplash.jpg);
+    background-size: cover;
+}
+
+.textBox {
+    margin: 0 35px 15px 0;
+    display: flex;
+    height: 434.33px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.textBox p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+
+.gallery {
+    margin-top: 10rem;
+    width: 100%;
+}
+
+.titleBox {
+    display: flex;
+    margin-left: 70px;
+}
+
+.title2 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 55%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.media {
+    width: 600px;
+    height: 450px;
+    padding: 0 35px 10px;
+    margin-top: 3rem;
+    perspective: 50px;
+    z-index: 0;
+}
+
+.media img {
+    inline-size: 100%;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.media img:hover {
+    transform: translateZ(4px);
+}
+
+.descBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .desc2 {
+    color: white;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+} */
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 0.3rem;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+.titleBox2 {
+    display: flex;
+    margin-top: 8rem;
+    margin-left: 70px;
+}
+
+.title3 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.sTitleBox2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6rem;
+    margin-top: 1rem;
+}
+.smallTitle {
+    color: #D6AD60;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.aboutContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.desc2 {
+    margin-left: 4rem;
+    margin-right: 5rem;
+    height: 650px;
+    left: 35%;
+    z-index: 1;
+    position: absolute;
+}
+
+.desc2 p {
+    margin-top: 5rem;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.imageAbout {
+    margin-left: 5rem;
+    width: 585px;
+    height: 650px;
+    overflow: hidden;
+}
+
+.image2 {
+    margin-right: 5rem;
+    width: 585px;
+    height: 746px;
+}
+
+.imageAbout img {
+    width: 585px;
+    height: 650px;
+}
+
+footer {
+    margin-top: 3rem;
+    width: 100%;
+    height: 380px;
+    background-image: linear-gradient(180deg, #3B3934 0%, rgba(59, 57, 52, 0) 131.24%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-footer {
+    display: grid;
+    margin-left: 5rem;
+}
+
+.left-footer img {
+    margin-top: 4rem;
+    width: 250px;
+    height: auto;
+}
+
+.left-footer p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    align-self: end;
+    margin-bottom: 3rem;
+}
+
+.right-footer {
+    display: grid;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    height: 300px;
+}
+
+.email-news {
+    margin-top: 4rem;
+    margin-left: 10rem;
+    display: grid;
+    gap: 10px;
+}
+
+
+.subtitle1 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+
+input[type=email-news]{
+    width: 296px;
+    height: 20px;
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: #5f5b52;
+    border: none;
+    color: white;
+    outline: none;
+    transition: .2s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+input[type=email-news]:focus {
+    background-color: #9f9a87;
+    border-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    border: none;
+    color: white;
+}
+
+input[type=email-news]::placeholder {
+    color: #d8d8d8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.submits {
+    margin-top: 12px;
+}
+
+.submits button {
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #F4EBD0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #262522;
+    border-style: none;
+    cursor: pointer;
+}
+
+.submits button:hover {
+    background-color: #d3ccb4;
+    transition: .2s;
+}
+
+.notes {
+    padding-top: 4px;
+    padding-left: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    color: white;
+}
+
+.social {
+    margin-right: 5rem;
+    display: grid;
+    height: 50px;
+}
+
+.subtitle2 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    height: 50px;
+}
+
+.socialLogo {
+    display: flex;
+}
+
+.social img {
+    padding-right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px){
+    nav {
+        height: 150px;
+        padding: 0;
+    }
+    
+    .navlink #menu-hamburger {
+        display: block;
+        right: 10%;
+        width: 35px;
+    }
+
+    .navlink li{
+        display: none;
+    }
+
+    nav .logo {
+        position: absolute;
+        top: 5%;
+        left: 70px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .navlink.responsive {
+        position: absolute;
+        background: linear-gradient(180deg, #262522 0%, #3B3934 100%);
+        backdrop-filter: blur(12px);
+        width: 100%;
+        height: 101vh;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navlink.responsive li {
+        margin: 15px 0px;
+        display: grid;
+    }
+
+    .navlink.responsive #menu-hamburger {
+        position: absolute;
+    }
+    
+    .navlink.responsive li a{
+        font-size: 40px;
+    }
+
+    .middle_text {
+        width: 100%;
+        padding-top: 35%;
+        overflow: hidden;
+    }
+
+    .head {
+        /* width: 100%; */
+        display: grid;
+        justify-content: center;
+        font-size: 80px;
+        padding: 0px 20rem 0px;
+    }
+
+    .head span {
+        justify-self: center;
+    }
+
+    .subhead1 {
+        font-size: 25px;
+    }
+
+    .subhead2 {
+        text-align: center;
+        justify-self: center ;
+        font-size: 25px;
+        width: 490px;
+    }
+
+    .cards {
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .latestContent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .info_event {
+        margin: 1rem 2rem 2rem 3rem;
+        width: 80%;
+    }
+
+    .textBox {
+        display: flex;
+        height: 230px;
+        justify-content: flex-start;
+        margin-bottom: 0px;
+    }
+    
+    .textBox p {
+        font-size: 30px;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+    
+    .desc1 {
+        font-size: 13px;
+    }
+
+    .image1{
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(0deg, rgba(182, 141, 64, 1) 2%, rgba(182, 141, 64, 0),rgba(182, 141, 64, 0) 89.91%), url(./ImageAsset/anthony-delanoix-hzgs56Ze49s-unsplash.jpg);
+        background-position: 50% 90%;
+    }
+
+    .info {
+        margin-top: 20px;
+        height: 50px;
+        width: 130px;
+    }
+
+    .container {
+        grid-auto-columns: 90%;
+    }
+
+    .desc2 p{
+        font-size: 19px;
+    }
+
+    .imageAbout {
+        margin-left: 5rem;
+        width: 400px;
+        height: 650px;
+    }
+
+    .imageAbout img {
+        right: 50rem;
+    }
+
+    .left-footer {
+        margin-left: 2.7rem;
+    }
+
+    .left-footer p {
+        font-size: 14px;
+        padding-right: 8rem;
+    }
+
+    .right-footer {
+        display: grid;
+        margin-right: 2.7rem;
+        margin-top: 3rem;
+        height: 300px;
+        justify-content: right;
+    }
+
+    .email {
+        align-items:self-end;
+    }
+  
+    .subtitle1 {
+        margin-left: 11rem;
+    }
+
+    .subtitle2 {
+        justify-self: end;
+    }
+
+    .submits {
+        margin-left: 14.5rem;
+    }
+
+    .social {
+        justify-content: end;
+        margin-right: 0;
+    }
+
+    #fb {
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width: 376px){
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    .middle_text {
+        width: 375px;
+        padding-top: 50%;
+    }
+    
+    .head {
+        align-self: center;
+        font-size: 50px;
+        padding: 2rem 4rem;
+    }
+    
+    .subhead1 {
+        font-size: 20px;
+        padding:1rem 4rem;
+    }
+    
+    .subhead2 {
+        font-size: 20px;
+        padding-left: 4rem;
+    }
+
+    .title1 {
+        padding-left: 2rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    .cards {
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .latestContent {
+        display: flex;
+        flex-direction: column-reverse;
+        /* height: 449.32px;
+        justify-content: center;
+        background-color: #F4EBD0;
+        width: 80%;
+        border-radius: 33px;
+        overflow: hidden; */
+    }
+
+    .info_event {
+        margin: 1rem 2rem 2rem 2rem;
+        width: 80%;
+    }
+
+    .textBox {
+        display: flex;
+        height: 230px;
+        justify-content: flex-start;
+        margin-bottom: 0px;
+    }
+    
+    .textBox p {
+        font-size: 30px;
+        margin-left: 1rem;
+        margin-right: 3rem;
+        margin-top: 2rem;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+    
+    .desc1 {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .image1{
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(0deg, rgba(182, 141, 64, 1) 2%, rgba(182, 141, 64, 0),rgba(182, 141, 64, 0) 89.91%), url(./ImageAsset/anthony-delanoix-hzgs56Ze49s-unsplash.jpg);
+        background-position: 50% 90%;
+    }
+
+    .info {
+        margin-top: 20px;
+        height: 50px;
+        width: 130px;
+    }
+
+    .titleBox {
+        margin-left: 2rem;
+    }
+
+    .container {
+        grid-auto-columns: 90%;
+    }
+
+    .media {
+        width: 600px;
+        height: 200px;
+        padding: 0 30px 5px;
+        margin-top: 3rem;
+        perspective: 50px;
+        z-index: 0;
+    }
+    
+    .media img {
+        inline-size: 50%;
+        aspect-ratio: 5 / 3;
+        object-fit: cover;
+        transition: transform .5s;
+        /* height: auto; */
+    }
+
+    .titleBox2 {
+        margin-left: 2rem;
+        margin-right: 4rem;
+    }
+
+    .sTitleBox2 {
+        margin-right: 1rem;
+    }
+
+    .aboutContent {
+        margin-top: 1.5rem;
+    }
+
+    .desc2 {
+        /* margin-left: 4rem; */
+        margin-right: 2rem;
+        height: 350px;
+        left: 16%;
+        z-index: 1;
+        /* position: absolute; */
+    }
+    .desc2 p{
+        font-size: 11px;
+        margin-top: 2rem;
+    }
+
+    .imageAbout {
+        margin-left: 2rem;
+        width: 250px;
+        height: 350px;
+    }
+
+    .imageAbout img {
+        width: 100%;
+        height: 100%;
+        right: 50rem;
+    }
+    
+    footer {
+        display: flex;
+        /* grid-template-columns:; */
+        flex-direction: column-reverse;
+        margin-top: 7rem;
+        background-image: linear-gradient(180deg, #3B3934 0%, rgba(59, 57, 52, 0) 131.24%);
+        justify-content: space-between;
+    }
+
+    .right-footer {
+        display: grid;
+        margin-right: 2rem;
+        margin-top: 10rem;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-footer {
+        margin-left: 0;
+    }
+
+}
